@@ -10,7 +10,7 @@ body, html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.splash {
+.splash-screen {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -20,7 +20,7 @@ body, html {
   animation: fadeIn 1.5s ease-in-out;
 }
 
-.splash h1 {
+.splash-screen h1 {
   font-size: 3rem;
   letter-spacing: 2px;
   text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
