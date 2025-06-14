@@ -65,52 +65,84 @@ body {
   transition: ease-in-out 0.5s;
 }
 
-/* Sticky Header */
-.sticky-header {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  z-index: 1000;
-  padding: 1rem 2rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-
-  /* Hidden by default */
-  opacity: 0;
-  transform: translateY(-20px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.sticky-header.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.hidden-header {
-  display: none;
-}
-
-.nav-container {
+/* Hero Section */
+.hero-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #f0f0f0;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #00adb5;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #cccccc;
+}
+
+/* About Me Section */
+.about-section {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #00adb5;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.skill-badge {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.nav-logo {
-  width: 40px;
-  height: auto;
+.skill-badge img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 0.5rem;
 }
 
-.nav-links a {
-  margin-left: 1.5rem;
-  text-decoration: none;
+.skill-badge span {
   font-size: 1rem;
-  color: #f0f0f0;
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: #aaa;
+  color: #ffffff;
 }
