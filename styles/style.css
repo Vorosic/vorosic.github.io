@@ -5,6 +5,11 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  background-color: white;
+  transition: background-color 1s ease-in-out;
+}
+
 header {
   position: relative;
   left: 0;
@@ -30,7 +35,7 @@ header h4 {
   width: 100%;
   height: 100%;
   background-color: #161616;
-  transition: 1s;
+  transition: top 1s ease-in-out;
 }
 
 .logo-header {
