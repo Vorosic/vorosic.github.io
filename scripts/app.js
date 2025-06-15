@@ -35,3 +35,11 @@ window.addEventListener('DOMContentLoaded', () => {
     }, 500);
   }, 2000);
 });
+
+// Typed.js Lib
+var typed = new Typed('.auto-type', {
+  strings: ['Zaky.'],
+  typeSpeed: 25,
+  backSpeed: 250,
+  loop: true
+});

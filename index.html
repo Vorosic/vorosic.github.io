@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="styles/style.css" />
   <link rel="icon" href="assets/logo.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <title>Portfolio</title>
 </head>
 <body>
@@ -21,7 +23,7 @@
   <section id="hero" class="hero-section">
   <div class="hero-content">
     <h1>Hi there, my name is</h1>
-    <h2>Zaky.</h2>
+    <h2><span class="auto-type">Zaky.</span></h2>
     <p>I'm a student trying to learn how to code and make websites, trying to get better and better as the days go!</p>
   </div>
   </section>
@@ -43,16 +45,16 @@
     </p>
 
     <div class="skills">
-      <div class="skill-badge">
-        <img src="assets/html.png" alt="HTML logo" />
+      <div class="skill-badge aos-init aos-animate" data-aos="fade-down">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML logo" />
         <span>HTML</span>
       </div>
-      <div class="skill-badge">
-        <img src="assets/css.png" alt="CSS logo" />
+      <div class="skill-badge aos-init aos-animate" data-aos="fade-down">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS logo" />
         <span>CSS</span>
       </div>
-      <div class="skill-badge">
-        <img src="assets/js.png" alt="JavaScript logo" />
+      <div class="skill-badge aos-init aos-animate" data-aos="fade-down">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript logo" />
         <span>JavaScript</span>
       </div>
     </div>
@@ -62,5 +64,11 @@
 
   <!-- Scripts -->
   <script src="scripts/app.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init({
+    once: true
+  });
+  </script>
 </body>
 </html>
