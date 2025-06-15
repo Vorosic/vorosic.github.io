@@ -3,72 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+
   <link rel="stylesheet" href="styles/style.css" />
   <link rel="icon" href="assets/logo.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <title>Portfolio</title>
 </head>
 <body>
 
-  <!-- Splash Intro -->
-  <div class="intro">
-    <h1 class="logo-header">
-      <img src="assets/logo.ico" alt="Logo" class="logo-image" />
-      <span class="logo">Za</span><span class="logo">ky.</span>
-    </h1>
-  </div>
-
+  <!-- Hero Section -->
   <section id="hero" class="hero-section">
-  <div class="hero-content">
-    <h1>Hi there, my name is</h1>
-    <h2><span class="auto-type">Zaky.</span></h2>
-    <p>I'm a student trying to learn how to code and make websites, trying to get better and better as the days go!</p>
-  </div>
+    <div class="hero-content">
+      <h1>Hi there, my name is</h1>
+      <h2><span class="auto-type">Zaky.</span></h2>
+      <p>I'm a student trying to learn how to code and make websites, trying to get better and better as the days go!</p>
+    </div>
   </section>
 
-  
-  <section id="about" class="about-section">
-  <div class="about-content">
-    <h2>About Me</h2>
-    <p>
-      Hello! Nice to meet you, My name is Zaky. I'm a student trying to learn how to code and make websites, 
-      but honestly currently I am on gap year and about to enter University this year hopefully. 
-      Oh yeah I've been coding ever since I entered high school in 2021, I'm currently 18 and believe it or not, I'm from Indonesia!! (psst! I have 4 cats!)
-    </p>
+  <div class="wave-divider">
+    <img src="assets/wavesNegative.svg" alt="wave divider" />
+  </div>
 
-    <p>
-      Although my experience in coding is pretty low, I still try to learn and get better every day. 
-      My skills in HTML, CSS, and JavaScript are somewhat self-taught! So I apologize if there's any bugs on my website. 
-      Oh yeah, my skills are as listed below:
-    </p>
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="about-layout">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>Hello! Nice to meet you, my name is Zaky. I'm a student trying to learn how to code and make websites. I'm currently on a gap year and about to enter university this year, hopefully. I started coding in high school back in 2021. I'm 18 years old and from Indonesia. (Psst! I have 4 cats!)</p>
+        <p>Although my experience in coding is limited, I strive to improve every day. My skills in HTML, CSS, and JavaScript are mostly self-taught. Apologies me if any bugs occurs on my site — I’m still learning! My current skills are listed below:</p>
+      </div>
+      <div class="about-image">
+        <img src="assets/me.jpg" alt="Photo of Zaky" />
+      </div>
+    </div>
 
     <div class="skills">
-      <div class="skill-badge aos-init aos-animate" data-aos="fade-down">
+      <div class="skill-badge" data-aos="fade-down" data-aos-once="true">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML logo" />
         <span>HTML</span>
       </div>
-      <div class="skill-badge aos-init aos-animate" data-aos="fade-down">
+      <div class="skill-badge" data-aos="fade-down" data-aos-once="true">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS logo" />
         <span>CSS</span>
       </div>
-      <div class="skill-badge aos-init aos-animate" data-aos="fade-down">
+      <div class="skill-badge" data-aos="fade-down" data-aos-once="true">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript logo" />
         <span>JavaScript</span>
       </div>
     </div>
-  </div>
   </section>
-
 
   <!-- Scripts -->
   <script src="scripts/app.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-  AOS.init({
-    once: true
-  });
-  </script>
+  <script>AOS.init();</script>
+
 </body>
 </html>

@@ -1,4 +1,4 @@
-/* Reset & Fonts */
+/* Reset & Font */
 * {
   margin: 0;
   padding: 0;
@@ -11,62 +11,6 @@ body {
   transition: background-color 1s ease-in-out;
 }
 
-/* Splash Screen */
-.intro {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  background-color: #161616;
-  transition: top 1s ease-in-out;
-}
-
-.logo-header {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #ffffff;
-}
-
-.logo-image {
-  display: block;
-  margin: 0 auto 1rem;
-  width: 180px;
-  max-width: 90%;
-  height: auto;
-  opacity: 0;
-  transform: scale(0.8); /* slightly smaller for a scaling effect */
-  transition: all 0.5s ease-in-out;
-}
-
-.logo-image.active {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.logo {
-  position: relative;
-  display: inline-block;
-  bottom: -20px;
-  opacity: 0;
-}
-
-.logo.active {
-  bottom: 0;
-  opacity: 1;
-  transition: ease-in-out 0.5s;
-}
-
-.logo.fade {
-  bottom: 15px;
-  opacity: 0;
-  transition: ease-in-out 0.5s;
-}
-
 /* Hero Section */
 .hero-section {
   display: flex;
@@ -76,7 +20,11 @@ body {
   padding: 2rem;
   background-color: #1e1e1e;
   color: #ffffff;
-  text-align: center;
+  text-align: left;
+}
+
+.hero-content {
+  max-width: 600px;
 }
 
 .hero-content h1 {
@@ -93,13 +41,11 @@ body {
 
 .hero-content p {
   font-size: 1.2rem;
-  max-width: 600px;
-  margin: 0 auto;
   line-height: 1.6;
   color: #cccccc;
 }
 
-/* About Me Section */
+/* About Section */
 .about-section {
   background-color: #2a2a2a;
   color: #f0f0f0;
@@ -107,28 +53,53 @@ body {
   text-align: center;
 }
 
-.about-content {
-  max-width: 800px;
-  margin: 0 auto;
+.about-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto 3rem auto;
+  flex-wrap: nowrap;
 }
 
-.about-content h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+
+.about-text {
+  flex: 1.6;
+  text-align: left;
+}
+
+.about-text h2 {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
   color: #00adb5;
 }
 
-.about-content p {
+.about-text p {
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 1.5rem;
 }
 
+.about-image {
+  flex: 0.6;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+/* Skills Section */
 .skills {
   display: flex;
   justify-content: center;
-  gap: 2rem;
   flex-wrap: wrap;
+  gap: 2rem;
   margin-top: 2rem;
 }
 
@@ -147,4 +118,43 @@ body {
 .skill-badge span {
   font-size: 1rem;
   color: #ffffff;
+}
+
+/* Wave Divider */
+.wave-divider {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  background-color: #1e1e1e;
+}
+
+.wave-divider img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-layout {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-text,
+  .about-image {
+    flex: unset;
+    width: 100%;
+  }
+
+  .about-image img {
+    max-width: 80%;
+    border-radius: 25px;
+  }
+
+  .skills {
+    justify-content: center;
+    gap: 1.5rem;
+  }
 }
