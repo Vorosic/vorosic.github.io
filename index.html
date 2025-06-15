@@ -1,220 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   Portfolio
-  </title>
-  <link href="styles/style.css" rel="stylesheet"/>
-  <link href="assets/logo.ico" rel="icon" type="image/x-icon"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap" rel="stylesheet"/>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
 
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js">
-  </script>
- </head>
- <body>
-  <header id="navbar" class="navbar">
-  <nav class="nav-container">
-  <a href="#hero" class="nav-logo">
-    <img src="assets/logo.ico" alt="Zaky Logo" class="logo-icon" />
-    Zaky
-  </a>
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="assets/logo.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
-  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-    <i class="fas fa-bars"></i>
-  </button>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  </head>
+  <body>
 
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#about">About</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-
-</header>
-
-  <!-- Hero Section -->
-  <section class="hero-section" id="hero">
-   <div class="hero-content">
-    <h1>
-     Hi there, my name is
-    </h1>
-    <h2>
-     <span class="auto-type">
-      Zaky.
-     </span>
-    </h2>
-    <p>
-     I'm a student trying to learn how to code and make websites, trying to get better and better as the days go!
-    </p>
-   </div>
-  </section>
-  <div class="wave-divider">
-   <img alt="wave divider" src="assets/wavesNegative.svg"/>
+    <div id="splash">
+    <img src="assets/logo.ico" alt="Logo">
+    <div class="loader"></div>
+    <h1>Hi and Welcome!</h1>
   </div>
-  <!-- About Section -->
-  <section class="about-section" id="about">
-   <div class="about-layout">
-    <div class="about-text">
-     <h2>
-      About Me
-     </h2>
-     <p>
-      Hello! Nice to meet you, my name is Zaky. I'm a student trying to learn how to code and make websites. I'm currently on a gap year and about to enter university this year, hopefully. I started coding in high school back in 2021. I'm 18 years old and from Indonesia. (Psst! I have 4 cats!)
-     </p>
-     <p>
-      Although my experience in coding is limited, I strive to improve every day. My skills in HTML, CSS, and JavaScript are mostly self-taught. Apologies me if any bugs occurs on my site — I’m still learning! My current skills are listed below:
-     </p>
-    </div>
-    <div class="about-image">
-     <img alt="Photo of Zaky" src="assets/photo1.jpg"/>
-    </div>
-   </div>
-   <div class="skills">
-    <div class="skill-badge" data-aos="fade-down" data-aos-once="true">
-     <img alt="HTML logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>
-     <span>
-      HTML
-     </span>
-    </div>
-    <div class="skill-badge" data-aos="fade-down" data-aos-once="true">
-     <img alt="CSS logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/>
-     <span>
-      CSS
-     </span>
-    </div>
-    <div class="skill-badge" data-aos="fade-down" data-aos-once="true">
-     <img alt="JavaScript logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
-     <span>
-      JavaScript
-     </span>
-    </div>
-   </div>
-  </section>
 
-  <div class="wave-divider">
-  <img alt="wave divider" src="assets/waves.svg"/>
-</div>
+    <!-- Header/Nav -->
+    <header id="navbar" class="navbar">
+      <nav class="nav-container">
+        <a href="#hero" class="nav-logo">
+          <img src="assets/logo.ico" alt="Zaky Logo" class="logo-icon" />
+          Zaky
+        </a>
 
+        <button type="button" class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-x"></i>
+        </button>
 
-  <!-- Experience Section -->
-  <section class="experience-section" id="experience">
-   <h2>
-    Experience
-   </h2>
-   <div class="experience-timeline">
-    <div class="experience-item" data-aos="fade-up-left">
-     <div class="experience-content">
-      <div class="experience-text">
-       <h3>
-        Frontend Developer Intern
-       </h3>
-       <span class="experience-date">
-        June 2024 – August 2024
-       </span>
-       <p>
-        Worked on building responsive UI components using HTML, CSS, and JavaScript. 
-        Contributed to bug fixing and improving performance across several website features.
-       </p>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#abouts">About</a></li>
+          <li><a href="#experiences">Experience</a></li>
+          <li><a href="#contacts">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <h1>Hi there, my name is</h1>
+        <h2><span class="auto-type">Zaky.</span></h2>
+        <p>I'm a student trying to learn how to code and make websites, trying to get better and better as the days go!</p>
       </div>
-      <div class="experience-image">
-       <img alt="Frontend Intern Project Example" src="assets/captpika.jpg"/>
+      <div class="hero-image">
+      <img src="assets/img1.png" alt="Zaky portrait">
       </div>
-     </div>
-    </div>
-    <div class="experience-item" data-aos="fade-up-right">
-     <div class="experience-content">
-      <div class="experience-text">
-       <h3>
-        Frontend Developer Intern
-       </h3>
-       <span class="experience-date">
-        June 2024 – August 2024
-       </span>
-       <p>
-        Worked on building responsive UI components using HTML, CSS, and JavaScript. 
-        Contributed to bug fixing and improving performance across several website features.
-       </p>
+      <div class="scroll-indicator">⌄</div>
+    </section>
+    <div class="wave-divider"><img src="assets/wavesNegative.svg" alt="wave divider" /></div>
+
+    <!-- About -->
+    <section id="about" class="about-section">
+      <div class="about-layout">
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>Hello! I’m Zaky from Indonesia. I’m not yet sure whether programming is a hobby or a passion, but I love the challenges I face when I’m writing code. I first learned to code in high school in 2022. Since then, I haven’t progressed much because of other commitments, but I’m determined to pick it back up.</p>
+          <p>I’m currently on a gap year and plan to begin university in 2025. Although my coding experience is limited, I’m mostly self-taught and strive to improve every day. Please excuse any bugs you might encounter on my site—I’m still learning!</p>
+        </div>
+        <div class="about-image">
+          <img src="assets/me.jpg" alt="Photo of Zaky" />
+        </div>
       </div>
-      <div class="experience-image">
-       <img alt="Frontend Intern Project Example" src="assets/captpika.jpg"/>
+
+      <div class="skills">
+        <div class="skill-badge" data-aos="fade-down" data-aos-once="true">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML logo" />
+          <span>HTML</span>
+        </div>
+        <div class="skill-badge" data-aos="fade-down" data-aos-once="true">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS logo" />
+          <span>CSS</span>
+        </div>
+        <div class="skill-badge" data-aos="fade-down" data-aos-once="true">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript logo" />
+          <span>JavaScript</span>
+        </div>
       </div>
-     </div>
-    </div>
-    <div class="experience-item" data-aos="fade-up-left">
-     <div class="experience-content">
-      <div class="experience-text">
-       <h3>
-        Frontend Developer Intern
-       </h3>
-       <span class="experience-date">
-        June 2024 – August 2024
-       </span>
-       <p>
-        Worked on building responsive UI components using HTML, CSS, and JavaScript. 
-        Contributed to bug fixing and improving performance across several website features.
-       </p>
+    </section>
+
+    <div class="wave-divider"><img src="assets/waves.svg" alt="wave divider" /></div>
+
+    <!-- Experience -->
+    <section id="experience" class="experience-section">
+      <h2>Experience</h2>
+      <div class="experience-timeline">
+        <div class="experience-item" data-aos="fade-up-left" data-aos-once="true">
+          <div class="experience-content">
+            <div class="experience-text">
+              <h3>Simple Calculator</h3>
+              <span class="experience-date">August 2024</span>
+              <p>Made a simple calculator using Android Studio as a project required by School. I've made with a thought of making it look simple and clean, but focussing on its function</p>
+            </div>
+            <div class="experience-image">
+              <img src="assets/calc.png" />
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-item" data-aos="fade-up-left" data-aos-once="true">
+          <div class="experience-content">
+            <div class="experience-text">
+              <h3>Made Website for School Project</h3>
+              <span class="experience-date">September 2023</span>
+              <p>Worked with a team of 4 making Website that is responsive using HTML, CSS, and JavaScript. Contributed to making the Front End and fixing bugs</p>
+            </div>
+            <div class="experience-image">
+              <img src="https://private-user-images.githubusercontent.com/118418211/455265575-911703a5-7e01-4107-8860-84ea85114a43.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDk5OTk1MzMsIm5iZiI6MTc0OTk5OTIzMywicGF0aCI6Ii8xMTg0MTgyMTEvNDU1MjY1NTc1LTkxMTcwM2E1LTdlMDEtNDEwNy04ODYwLTg0ZWE4NTExNGE0My5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjE1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYxNVQxNDUzNTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04YTJhOGZmMGE5Mzk1NjhjMDQ1ODg3MzU1OTA3ZjBmY2ZkZjM5ZjdlMGI3YjVlZDhkYjgxMmRmNmUzOTc4MDE4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.N5Esknt-C_W2AjuoKw_4MESlZYTUIMuqnyqayq2NPGc" alt="Frontend Intern Project Example" />
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="experience-image">
-       <img alt="Frontend Intern Project Example" src="assets/captpika.jpg"/>
+    </section>
+
+    <div class="wave-divider"><img src="assets/wavesNegative.svg" alt="wave divider" /></div>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+      <h2>Contact Me</h2>
+      <p>If you’d like to reach out, feel free to send me an email!</p>
+      <a href="mailto:sultanzaky070310@gmail.com" class="contact-button">Send Email</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>&copy; 2025 Zaky. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="social-icons">
+          <a href="https://github.com/Vorosic" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://discordapp.com/users/448526783763972098" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-discord"></i></a>
+          <a href="https://www.youtube.com/@vorosic" target="_blank" aria-label="GitHub"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.tiktok.com/@vorosic" target="_blank" aria-label="GitHub"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://instagram.com/a.zzaky_?igshid=MWZjMTM2ODFkZg==" target="_blank" aria-label="Twitter"><i class="fa-brands fa-instagram"></i></a>
+        </div>
       </div>
-     </div>
-    </div>
-   </div>
-   
-  </section>
+    </footer>
 
-  <div class="wave-divider">
-  <img src="assets/wavesNegative.svg" alt="wave divider" />
-</div>
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></button>
 
-<section class="contact-section" id="contact">
-  <h2>Contact Me</h2>
-  <p>If you’d like to reach out, feel free to send me an email!</p>
-  <a href="mailto:your.email@example.com" class="contact-button">Send Email</a>
-</section>
-
-<!-- Footer -->
-<footer class="site-footer">
-  <div class="footer-content">
-    <p>&copy; 2025 Zaky. All rights reserved.</p>
-    <div class="footer-links">
-      <a href="#hero">Home</a>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-    </div>
-    <div class="social-icons">
-      <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://twitter.com/yourhandle" target="_blank" aria-label="Twitter">
-        <i class="fab fa-twitter"></i>
-      </a>
-    </div>
-  </div>
-</footer>
-
-<!-- Scroll to Top Button -->
-<button id="scrollTopBtn" aria-label="Scroll to top">
-  <i class="fas fa-chevron-up"></i>
-</button>
-
-
-
-  <!-- Scripts -->
-  <script src="scripts/app.js">
-  </script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
-  </script>
-  <script>
-   AOS.init();
-  </script>
- </body>
+    <!-- JS -->
+    <script src="scripts/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+  </body>
 </html>
