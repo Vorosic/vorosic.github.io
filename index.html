@@ -10,10 +10,32 @@
   <link href="assets/logo.ico" rel="icon" type="image/x-icon"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap" rel="stylesheet"/>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js">
   </script>
  </head>
  <body>
+  <header id="navbar" class="navbar">
+  <nav class="nav-container">
+  <a href="#hero" class="nav-logo">
+    <img src="assets/logo.ico" alt="Zaky Logo" class="logo-icon" />
+    Zaky
+  </a>
+
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+</header>
+
   <!-- Hero Section -->
   <section class="hero-section" id="hero">
    <div class="hero-content">
@@ -48,7 +70,7 @@
      </p>
     </div>
     <div class="about-image">
-     <img alt="Photo of Zaky" src="assets/me.jpg"/>
+     <img alt="Photo of Zaky" src="assets/photo1.jpg"/>
     </div>
    </div>
    <div class="skills">
@@ -144,6 +166,48 @@
    </div>
    
   </section>
+
+  <div class="wave-divider">
+  <img src="assets/wavesNegative.svg" alt="wave divider" />
+</div>
+
+<section class="contact-section" id="contact">
+  <h2>Contact Me</h2>
+  <p>If you’d like to reach out, feel free to send me an email!</p>
+  <a href="mailto:your.email@example.com" class="contact-button">Send Email</a>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-content">
+    <p>&copy; 2025 Zaky. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="social-icons">
+      <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://twitter.com/yourhandle" target="_blank" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to Top Button -->
+<button id="scrollTopBtn" aria-label="Scroll to top">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+
+
   <!-- Scripts -->
   <script src="scripts/app.js">
   </script>
