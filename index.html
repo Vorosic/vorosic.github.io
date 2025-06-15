@@ -1,64 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-
-  <link rel="stylesheet" href="styles/style.css" />
-  <link rel="icon" href="assets/logo.ico" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-</head>
-<body>
-
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Portfolio
+  </title>
+  <link href="styles/style.css" rel="stylesheet"/>
+  <link href="assets/logo.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js">
+  </script>
+ </head>
+ <body>
   <!-- Hero Section -->
-  <section id="hero" class="hero-section">
-    <div class="hero-content">
-      <h1>Hi there, my name is</h1>
-      <h2><span class="auto-type">Zaky.</span></h2>
-      <p>I'm a student trying to learn how to code and make websites, trying to get better and better as the days go!</p>
+  <section class="hero-section" id="hero">
+   <div class="hero-content">
+    <h1>
+     Hi there, my name is
+    </h1>
+    <h2>
+     <span class="auto-type">
+      Zaky.
+     </span>
+    </h2>
+    <p>
+     I'm a student trying to learn how to code and make websites, trying to get better and better as the days go!
+    </p>
+   </div>
+  </section>
+  <div class="wave-divider">
+   <img alt="wave divider" src="assets/wavesNegative.svg"/>
+  </div>
+  <!-- About Section -->
+  <section class="about-section" id="about">
+   <div class="about-layout">
+    <div class="about-text">
+     <h2>
+      About Me
+     </h2>
+     <p>
+      Hello! Nice to meet you, my name is Zaky. I'm a student trying to learn how to code and make websites. I'm currently on a gap year and about to enter university this year, hopefully. I started coding in high school back in 2021. I'm 18 years old and from Indonesia. (Psst! I have 4 cats!)
+     </p>
+     <p>
+      Although my experience in coding is limited, I strive to improve every day. My skills in HTML, CSS, and JavaScript are mostly self-taught. Apologies me if any bugs occurs on my site — I’m still learning! My current skills are listed below:
+     </p>
     </div>
+    <div class="about-image">
+     <img alt="Photo of Zaky" src="assets/me.jpg"/>
+    </div>
+   </div>
+   <div class="skills">
+    <div class="skill-badge" data-aos="fade-down" data-aos-once="true">
+     <img alt="HTML logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>
+     <span>
+      HTML
+     </span>
+    </div>
+    <div class="skill-badge" data-aos="fade-down" data-aos-once="true">
+     <img alt="CSS logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/>
+     <span>
+      CSS
+     </span>
+    </div>
+    <div class="skill-badge" data-aos="fade-down" data-aos-once="true">
+     <img alt="JavaScript logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
+     <span>
+      JavaScript
+     </span>
+    </div>
+   </div>
   </section>
 
   <div class="wave-divider">
-    <img src="assets/wavesNegative.svg" alt="wave divider" />
-  </div>
+  <img alt="wave divider" src="assets/waves.svg"/>
+</div>
 
-  <!-- About Section -->
-  <section id="about" class="about-section">
-    <div class="about-layout">
-      <div class="about-text">
-        <h2>About Me</h2>
-        <p>Hello! Nice to meet you, my name is Zaky. I'm a student trying to learn how to code and make websites. I'm currently on a gap year and about to enter university this year, hopefully. I started coding in high school back in 2021. I'm 18 years old and from Indonesia. (Psst! I have 4 cats!)</p>
-        <p>Although my experience in coding is limited, I strive to improve every day. My skills in HTML, CSS, and JavaScript are mostly self-taught. Apologies me if any bugs occurs on my site — I’m still learning! My current skills are listed below:</p>
-      </div>
-      <div class="about-image">
-        <img src="assets/me.jpg" alt="Photo of Zaky" />
-      </div>
-    </div>
 
-    <div class="skills">
-      <div class="skill-badge" data-aos="fade-down" data-aos-once="true">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML logo" />
-        <span>HTML</span>
+  <!-- Experience Section -->
+  <section class="experience-section" id="experience">
+   <h2>
+    Experience
+   </h2>
+   <div class="experience-timeline">
+    <div class="experience-item" data-aos="fade-up-left">
+     <div class="experience-content">
+      <div class="experience-text">
+       <h3>
+        Frontend Developer Intern
+       </h3>
+       <span class="experience-date">
+        June 2024 – August 2024
+       </span>
+       <p>
+        Worked on building responsive UI components using HTML, CSS, and JavaScript. 
+        Contributed to bug fixing and improving performance across several website features.
+       </p>
       </div>
-      <div class="skill-badge" data-aos="fade-down" data-aos-once="true">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS logo" />
-        <span>CSS</span>
+      <div class="experience-image">
+       <img alt="Frontend Intern Project Example" src="assets/captpika.jpg"/>
       </div>
-      <div class="skill-badge" data-aos="fade-down" data-aos-once="true">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript logo" />
-        <span>JavaScript</span>
-      </div>
+     </div>
     </div>
+    <div class="experience-item" data-aos="fade-up-right">
+     <div class="experience-content">
+      <div class="experience-text">
+       <h3>
+        Frontend Developer Intern
+       </h3>
+       <span class="experience-date">
+        June 2024 – August 2024
+       </span>
+       <p>
+        Worked on building responsive UI components using HTML, CSS, and JavaScript. 
+        Contributed to bug fixing and improving performance across several website features.
+       </p>
+      </div>
+      <div class="experience-image">
+       <img alt="Frontend Intern Project Example" src="assets/captpika.jpg"/>
+      </div>
+     </div>
+    </div>
+    <div class="experience-item" data-aos="fade-up-left">
+     <div class="experience-content">
+      <div class="experience-text">
+       <h3>
+        Frontend Developer Intern
+       </h3>
+       <span class="experience-date">
+        June 2024 – August 2024
+       </span>
+       <p>
+        Worked on building responsive UI components using HTML, CSS, and JavaScript. 
+        Contributed to bug fixing and improving performance across several website features.
+       </p>
+      </div>
+      <div class="experience-image">
+       <img alt="Frontend Intern Project Example" src="assets/captpika.jpg"/>
+      </div>
+     </div>
+    </div>
+   </div>
+   
   </section>
-
   <!-- Scripts -->
-  <script src="scripts/app.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
-
-</body>
+  <script src="scripts/app.js">
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+  </script>
+  <script>
+   AOS.init();
+  </script>
+ </body>
 </html>

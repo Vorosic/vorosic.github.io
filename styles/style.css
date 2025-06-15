@@ -85,6 +85,7 @@ body {
 .about-image {
   flex: 0.6;
   text-align: center;
+
 }
 
 .about-image img {
@@ -156,5 +157,179 @@ body {
   .skills {
     justify-content: center;
     gap: 1.5rem;
+  }
+}
+
+.experience-section {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.experience-section h2 {
+  font-size: 3rem;
+  color: #00adb5;
+  margin-bottom: 3rem;
+}
+
+.experience-timeline {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.experience-item {
+  background-color: #2a2a2a;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.experience-item:hover {
+  transform: translateY(-5px);
+}
+
+.experience-item h3 {
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.experience-date {
+  font-size: 0.95rem;
+  color: #cccccc;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.experience-item p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #dddddd;
+}
+
+.experience-item {
+  background-color: #2a2a2a;
+  padding: 2rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.experience-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Flex container to hold text and image side-by-side */
+.experience-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Text section */
+.experience-text {
+  flex: 1.2;
+  color: #dddddd;
+}
+
+.experience-text h3 {
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.experience-text .experience-date {
+  font-size: 0.95rem;
+  color: #cccccc;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.experience-text p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* Image on the right */
+.experience-image {
+  flex: 1;
+  text-align: right;
+}
+
+.experience-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .experience-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .experience-image {
+    text-align: center;
+  }
+
+  .experience-image img {
+    max-width: 90%;
+    margin-top: 1rem;
+  }
+}
+
+
+
+
+/* Keep your existing card style */
+.experience-content {
+  background-color: #2a2a2a;
+  padding: 2rem;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.experience-text {
+  flex: 1;
+  color: #f0f0f0;
+}
+
+.experience-image {
+  flex: 1;
+  text-align: right;
+}
+
+.experience-image img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.4);
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .experience-section h2 {
+    font-size: 2.2rem;
+  }
+
+  .experience-item h3 {
+    font-size: 1.4rem;
+  }
+
+  .experience-item p {
+    font-size: 1rem;
   }
 }
